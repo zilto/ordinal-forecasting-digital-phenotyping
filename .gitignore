@@ -1,0 +1,10 @@
+*.ipynb_checkpoints
+*__pycache__/
+.vscode/
+docs/
+outputs/
+multirun/
+/data/**
+*.ckpt
+*.svg
+*.ipynb
