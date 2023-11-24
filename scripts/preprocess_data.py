@@ -13,7 +13,7 @@ pd.options.mode.chained_assignment = None
 def base_hydra_config() -> dict:
     return dict(
         job=dict(chdir=True),
-        run=dict(dir="./outputs/${now:%Y-%m-%d_%H-%M}/preprocess_data/offset_{$offset}"),
+        run=dict(dir="./outputs/${now:%Y-%m-%d_%H-%M}/preprocess_data/offset_${offset}"),
         sweep=dict(
             dir="./multirun/${now:%Y-%m-%d_%H-%M}/preprocess_data",
             subdir="offset_${offset}/",
